@@ -9,6 +9,11 @@ body {
     background-image: url(https://www.bembos.com.pe/skin/frontend/galafoodiris/default/bembos/images/bembos20/bg-page.png);
     height: 100%;
 }
+.wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
 
 /*HEADER COMPONENT*/
 
@@ -101,8 +106,6 @@ header{
 /*FOOTER COMPONENT*/
 
 .footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     height: 70px;
     line-height: 65px;
@@ -177,7 +180,10 @@ header{
     background-color: #ff2600;
     color: #ffffff;
 }
-
+/*CARDS INGREDIENTES*/
+.card-deck{
+    padding: 20px;
+}
 /*
 .btn_comprar::after {
     background: url(https://www.bembos.com.pe/skin/frontend/galafoodiris/default/images/bembos_bolso.png) no-repeat center;
