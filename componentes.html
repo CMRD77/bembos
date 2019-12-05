@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bembos: Sistema de ordenes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,600,700,900|Roboto:400,400i,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<div class="container_bgleft_header"></div>
+<div class="container_bgright_header"></div>
+<div class="container_bgleft_body"></div>
+<div class="container_bgright_body"></div>
+<header >
+    <nav class=" header-top">
+        <div id="datos_posicion_tiempo">
+            <span id="bembos_lugar">Lima, Perú. </span> <span id="bembos_fecha"> Diciembre 4, 2019, 00:00</span>
+        </div>
+    </nav>
+    <nav class="navbar navbar-nav navbar-expand-lg d-flex justify-content-center" >
+
+      <a class="navbar-brand" href="#">
+            <img src="imgs/bembos_bb_logo.webp" width="266" height="55" class="d-inline-block align-top" alt="Bembos Burger Builder V 1.0">
+          </a>
+     </nav>
+     <nav class="nav-user d-flex flex-row justify-content-between">
+         <ul class="btn-users ">
+            <li id="btn-close">
+                X SALIR
+            </li>
+         </ul>
+         <span id="user-name-bembos">
+            Nombre de Usuario 
+         </span>
+  
+     </nav>
+</header>
+<main class="container" id="bembos-contenido-central">
+    <div class="stepper-content-nav d-flex flex-row justify-content-between">
+        <button type="button" title="Anterior" class="btn-general btn-steps-nav" ><span id="btn-nav-anterior"> anterior</span> </button>
+        <ul class="stepper-order">
+            <li class="stepper-order-item  stepper-order-item-activo">1</li>
+            <li class="stepper-order-item">2</li>
+            <li class="stepper-order-item">3</li>
+        </ul>
+        <button type="button" title="Siguiente" class="btn-general btn-steps-nav" ><span id="btn-nav-siguiente">siguiente </span> </button>
+    </div>
+</main>
+<div id="footer-bembos" class="footer">
+    <div class="footer_content d-flex justify-content-center">
+                <span id="pacha-credits">BEMBOS © 2019 Todos los derechos reservados. Developed by PachaQtec Think Tank</span>        
+    </div>
+</div>
+
+</body>
+</html>
