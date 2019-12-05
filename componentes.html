@@ -34,53 +34,73 @@
             <ul class="btn-users ">
                 <li id="btn-close">X SALIR</li>
             </ul>
-            <span id="user-name-bembos">Nombre de Usuario</span>
+            <span id="user-name-bembos">Nombre de Usuario  </span>
         </nav>
     </header>
     <main class="container" id="bembos-contenido-central">
-    <!--NAVEGADOR STEPPER DE ORDEN-->
-        <div class="stepper-content-nav d-flex flex-row justify-content-between">
-            <button type="button" title="Anterior" class="btn-general btn-steps-nav" >
-                <span id="btn-nav-anterior"> anterior</span> 
-            </button>
-            <ul class="stepper-order">
-                <li class="stepper-order-item  stepper-order-item-activo">1</li>
-                <li class="stepper-order-item">2</li>
-                <li class="stepper-order-item">3</li>
-            </ul>
-            <button type="button" title="Siguiente" class="btn-general btn-steps-nav" >
-                <span id="btn-nav-siguiente">siguiente </span> 
-            </button>
-        </div>
-    <!--NAVEGADOR STEPPER DE ORDEN-->
+
     <!--MUESTRAS SELECTOR DE INGREDIENTES-->
     <div class="card-deck">
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
+        <!--SUPPLY ITEM-->
+        <div class="col-lg-3  col-md-6 col-sm-12 col-12 mb-5">
+              <div class="card supply-item">
+                  <img class="card-img-top" src="imgs/supplies/hamburguesa_carne.png" alt="Hamburguesa de carne">
+                    <div class="card-body">
+                        <h5 class="supply-card-title">Hamburguesa de carne</h5>
+                        <p class="supply-card-precio mb-0">S/.0.00</p>
+                  </div>
             </div>
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+         <!--SUPPLY ITEM-->
+        <!--SUPPLY ITEM-->
+        <div class="col-lg-3  col-md-6 col-sm-12 col-12 mb-5">
+                <div class="card supply-item">
+                    <img class="card-img-top" src="imgs/supplies/hamburguesa_pollo.png" alt="Hamburguesa de pollo">
+                      <div class="card-body">
+                          <h5 class="supply-card-title">Hamburguesa de pollo</h5>
+                          <p class="supply-card-precio mb-0">S/.0.00</p>
+                    </div>
               </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        <!--SUPPLY ITEM-->
+        <!--SUPPLY ITEM-->
+        <div class="col-lg-3  col-md-6 col-sm-12 col-12 mb-5">
+                <div class="card supply-item">
+                    <img class="card-img-top" src="imgs/supplies/hamburguesa_carnedesoya.png" alt="Hamburguesa de carne de soya">
+                      <div class="card-body">
+                          <h5 class="supply-card-title">Hamburguesa de carne de soya</h5>
+                          <p class="supply-card-precio mb-0">S/.0.00</p>
+                    </div>
               </div>
-            </div>
+          </div>
+        <!--SUPPLY ITEM-->
     </div>
-    
+
+    <!--NAVEGADOR STEPPER DE PEDIDO-->
+    <div class="stepper-content-nav d-flex flex-row justify-content-between">
+        <button type="button" title="Anterior" class="btn-general btn-steps-nav" >
+                <span id="btn-nav-anterior"> anterior</span> 
+        </button>
+        <div class="d-flex flex-column">
+                <span class="consolidado-precio-descripcion">Costo acumulado:</span>
+                <span class="consolidado-precio-de-orden">S/0.00</span>
+        </div>
+        <button type="button" title="Siguiente" class="btn-general btn-steps-nav" >
+                <span id="btn-nav-siguiente">siguiente </span> 
+        </button>
+    </div>
+    <!--NAVEGADOR STEPPER DE PEDIDO->
+
+     <!--NAVEGADOR STEPPER DEFINE INVOICE-->
+    <div class="stepper-invoice-general">
+         <ul class="stepper-invoice">
+            <li class="stepper-invoice-item  stepper-invoice-item-activo">1</li>
+            <li class="stepper-invoice-item">2</li>
+             <li class="stepper-invoice-item">3</li>
+         </ul>
+    </div>
+     <!--NAVEGADOR STEPPER DEFINE INVOICE-->
+
     <!--MUESTRAS SELECTOR DE INGREDIENTES-->
     </main>
     <footer id="footer-bembos" class="footer">

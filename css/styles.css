@@ -149,13 +149,35 @@ header{
 
 /*COMPONENTES - STEPPER ORDER*/
 .stepper-content-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin: 20px;
     padding: 20px;
     background-color: #ffc600;
     border: 1px solid #23388b;
 }
+.consolidado-precio-descripcion{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100; 
+    font-size: 0.8em;
+    text-align: center;
+}
 
-.stepper-order{
+.consolidado-precio-de-orden{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    color: #173083;    
+    font-size: 1.5em;
+    text-align: center;
+}
+/*COMPONENTES - STEPPER INVOICE*/
+.stepper-invoice-general{
+    margin: 30px;
+}
+
+.stepper-invoice{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -164,8 +186,10 @@ header{
     margin: 0;
     height: 40px;
 }
-.stepper-order-item{
+
+.stepper-invoice-item{
     background-color: #ffffff;
+    border:1px solid #173083;
     font-family: 'Roboto Slab', serif;
     font-weight: 900;
     display: inline-table;
@@ -176,25 +200,36 @@ header{
     margin: 10px 5px 10px 5px ;
 }
 
-.stepper-order-item-activo{
+.stepper-invoice-item-activo{
     background-color: #ff2600;
     color: #ffffff;
+    border: none;
 }
 /*CARDS INGREDIENTES*/
 .card-deck{
     padding: 20px;
 }
-/*
-.btn_comprar::after {
-    background: url(https://www.bembos.com.pe/skin/frontend/galafoodiris/default/images/bembos_bolso.png) no-repeat center;
-        background-size: auto;
-    position: absolute;
-    content: "";
-    width: 37px;
-    height: 38px;
-    top: -5px;
-    right: 0;
-    z-index: 9;
-    background-size: 35px;
+.supply-card-title{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    color: #5c5c5c;
+    font-size: 18px;
 }
-*/
+.supply-card-precio{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #5c5c5c;
+    font-size: 14px;
+}
+.supply-item:hover{
+    background-image: url(https://www.bembos.com.pe/skin/frontend/galafoodiris/default/images/points_combo.png);
+    border: 1px solid #23398f;
+    background-repeat: no-repeat;
+    background-color: #23398f;
+}
+.supply-item:hover > .card-body>.supply-card-title{
+    color: #ffffff;
+}
+.supply-item:hover > .card-body>.supply-card-precio{
+    color: #ffffff;
+}
