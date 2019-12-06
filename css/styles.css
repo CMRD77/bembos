@@ -134,6 +134,24 @@ header{
     border: none;
     height: 45px;
 }
+
+.btn-secundario {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color:#22378b;
+    background-color:#ffb500;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    height: 45px;
+}
+
+.btn-secundario:hover{
+    background-color: #ff2600;
+    color: #ffffff;
+}
+
+
 .btn-general:hover{
     background-color: #16245c;
 }
@@ -232,4 +250,167 @@ header{
 }
 .supply-item:hover > .card-body>.supply-card-precio{
     color: #ffffff;
+}
+
+/*INVOICE ELEMENT*/
+.invoice-container{
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    border:solid 3px #22378b;
+    background-color: #ffffff;
+}
+.invoice-header{
+    margin-bottom:30px;
+}
+.invoice-title{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    color: #22378b;
+    padding-bottom: 5px;
+    border-bottom: solid 2px #ffb500;
+}
+.invoice-detalles-top{
+    border-bottom: solid 1px #23398f;
+}
+.invoice-descripcion{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    font-size: 12px;
+    color: #5c5c5c;
+}
+.invoice-data{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 200;
+    font-size: 14px;
+    color: #5c5c5c;
+}
+.invoice-detalles-top h2{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    font-size:20px;
+    color:#173083;
+}
+.invoice-accion-remover a{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    font-size:12px;
+}
+.invoice-order-details h4{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    font-size:16px;
+    color: #5c5c5c;
+}
+
+p{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    font-size:14px;
+    color: #5c5c5c;
+}
+.order-item{
+    padding:20px 0 5px 0;
+}
+
+#order-supplies-list{
+    padding:0 ;
+}
+.order-counter{
+    text-align: right;
+}
+.order-supply{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    font-size:14px;
+    color: #5c5c5c;
+    margin-left:25px;
+    
+}
+.order-counter .count {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 0 2px;
+    color: #173083;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    width: 50px;
+}
+.order-counter .plus {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #173083;
+    color: white;
+    width: 30px;
+    height: 30px;
+    font: 30px/1 'Roboto Slab', serif;
+    text-align: center;
+    border-radius: 50%;
+    margin: 5px;
+    }
+.order-counter .minus {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    background-color: #173083;
+    width: 30px;
+    height: 30px;
+    font: 30px/1 'Roboto Slab', serif;
+    text-align: center;
+    border-radius: 50%;
+    background-clip: padding-box;
+    margin: 5px;
+}
+
+.minus:hover{
+    background-color:#ff2600;
+}
+.plus:hover{
+    background-color:#ff2600;
+}
+/*COSTO PEDIDO EN INVOICE*/
+.invoice-order-cost{
+    text-align: right;
+    border-bottom: 1px solid #dddddd;
+}
+.order-costo-data{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100; 
+    font-size: 0.8rem;
+    text-align: center;
+}
+}
+.order-costo-descripcion{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900; 
+    font-size: 1.4rem;
+    text-align: center;
+
+}
+/*INVOICE PRECIO FINAL*/
+.invoice-container-precio-total{
+    text-align: right;
+}
+.big-price-decripcion, .big-price-data{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900; 
+    font-size: 1.4rem;
+    color: #23398f;
+    text-align: center;
+}
+
+
+#btn-nav-confirmar::after{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f058"
+}
+
+.btn-confirmar{
+    margin: 50px 0 30px 0;
+}
+/*ALERTA*/
+.alert{
+    font-family: 'Roboto Slab', serif;
 }
