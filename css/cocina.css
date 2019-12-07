@@ -1,0 +1,170 @@
+*,*::after,*::before{
+    box-sizing: border-box
+}
+
+body {
+    height: 100%;
+    background-image: url(https://www.bembos.com.pe/skin/frontend/galafoodiris/default/bembos/images/bembos20/bg-page.png);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*HEADER COMPONENT*/
+
+header{
+    height: 150px;
+    width: 100wv;
+    background-color: #22378b;
+}
+
+.header-top {
+    height: 25px;
+    background-color: #173083;
+    color: #fff;
+}
+#datos_posicion_tiempo span{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    color: white;
+    font-size: 10px;
+    padding-left: 20px;
+}
+
+.navbar{
+    background: url(https://www.bembos.com.pe/skin/frontend/galafoodiris/default/images/points_header.png) #22378b;
+}
+.nav-user {
+    height: 40px;
+    background-color: #ffb500;
+}
+
+.btn-users{
+   font-family: 'Oswald', sans-serif;
+   text-transform: uppercase;
+   font-weight: 100;
+   font-size: 14px;
+   color:#26419a;
+   list-style: none;
+   padding-top:5px ;
+}
+.btn-users>li{
+    padding: 4px 10px 4px 10px;
+    width: auto;
+}
+.btn-users>li:hover{
+    color: white;
+    background-color: #22378b;
+    display: inline-table;
+    width: auto;
+    border-radius: 5px;
+}
+
+#user-name-bembos{
+    line-height: 40px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    color: #22378b;
+    padding-right:30px ;
+}
+#user-name-bembos::after{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f007";
+}
+
+/*MAIN*/
+
+main {
+    width: 100%;
+    padding: 20px;
+}
+
+.col-sm-3{
+    border: 1px solid black;
+    margin: 5px;    
+    border-radius: 5px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.statusButtons{
+    padding-bottom: 10px;
+    padding-top: 0;
+    padding-left: 40px;
+    padding-right: 0px;
+}
+
+.ordersTitle{
+    font-family: 'Oswald', sans-serif;
+    color: #22378b;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 40px;
+    padding-right: 0px;
+}
+
+.card-title{
+font-family: 'Oswald', sans-serif;
+color: #22378b;
+}
+
+.card-title, .Sub {
+    margin: 0
+}
+.red{
+    color: red
+}
+
+#example-1{
+    display: flex;
+    justify-content: center;
+}
+
+.mainOrders{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.botonEntregar{
+    background-color: #ffb500;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.botonEntregado{
+    background-color: #22378b;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.row orders{
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*FOOTER*/
+.footer {
+    width: 100%;
+    height: 70px;
+    line-height: 65px;
+    background-color: #22378b;
+  }
+
+.footer_content {
+    background: url(https://www.bembos.com.pe/skin/frontend/galafoodiris/default/images/bizmap_footer.png) no-repeat right bottom, url(https://www.bembos.com.pe/skin/frontend/galafoodiris/default/images/points_footer.png) 0px bottom no-repeat;
+}
+#pacha-credits{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    color: white;
+    font-size: 10px;
+}
+
+
