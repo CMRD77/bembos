@@ -420,8 +420,27 @@ p{
 }
 
 .ItemSeleccionado{
-    padding: 5px;
-    border-radius: 10px;
-    background: #9397a7;
+    text-align: center;
+    padding: 10px 20px 5px 20px;
+    border-radius: 0 0 10px 10px;
+    margin:0 15px;
+    bottom: 5px;
+    background: #ff2600;
+    font-family: 'Roboto Slab', serif;
+    color: white;
     display: none;
+}
+.ItemSeleccionado::before {
+    width: 0;
+    height: 0;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    margin: auto;
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    padding-bottom:30px;
+    left: 50%;
+    margin-left: -10px;
 }
