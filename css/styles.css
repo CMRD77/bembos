@@ -127,12 +127,16 @@ header{
 .btn-general {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    color: #fff;
+    color: #fff; 
     background-color: #22378b;
     padding: 10px;
     border-radius: 5px;
     border: none;
+    font-size: 12px;
     height: 45px;
+}
+.btn-steps-nav{
+    width:130px;
 }
 
 .btn-secundario {

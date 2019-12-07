@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="referrer" content="strict-origin" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/c58439f1b5.js"></script>
 </head>
 <body>
 <div class="container_bgleft_header"></div>
@@ -27,7 +28,7 @@
         </nav>
         <nav class="navbar navbar-nav navbar-expand-lg d-flex justify-content-center" >
             <a class="navbar-brand" href="#">
-                <img src="imgs/bembos_bb_logo.webp" width="266" height="55" class="d-inline-block align-top" alt="Bembos Burger Builder V 1.0">
+                <img src="imgs/bembos_bb_logo.png" width="266" height="55" class="d-inline-block align-top" alt="Bembos Burger Builder V 1.0">
             </a>
         </nav>
         <nav class="nav-user d-flex flex-row justify-content-between">
@@ -40,11 +41,19 @@
     <main class="container" id="bembos-contenido-central">
 
     <!--MUESTRAS SELECTOR DE INGREDIENTES-->
+<<<<<<< HEAD
     <div id="p1">
         <div class="card-deck">
             <div class="col-lg-3  col-md-6 col-sm-12 col-12 mb-5" v-for="(category, index) in category01" :keys="index" id="DIV_1" @click="sumarItems('DIV_1' + '_' + category.id + '_' + category.price)">
                 <div class="card supply-item">
                     <img class="card-img-top" v-bind:src="category.image">
+=======
+    <div class="card-deck">
+        <!--SUPPLY ITEM-->
+        <div class="col-lg-3  col-md-6 col-sm-12 col-12 mb-5">
+              <div class="card supply-item">
+                  <img class="card-img-top img-fluid" src="imgs/supplies/hamburguesa_carne.png" alt="Hamburguesa de carne">
+>>>>>>> 8f58d432516f75fb5c0c98b5fca83ae104da28bc
                     <div class="card-body">
                         <h5 class="supply-card-title">{{category.name}}</h5>
                         <p class="supply-card-precio mb-0">S/.{{category.price}}</p>
