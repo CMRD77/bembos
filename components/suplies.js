@@ -179,32 +179,44 @@ new Vue({
             let arrItem = cadenaItem.split('|')
             let idPaso = document.getElementById('CHECK_' + arrItem[0])
             let idPasoCategoria = arrItem[0].split('_')
-
+            let valida = false
+            
             switch(idPasoCategoria[1]) {
                 case "1":
                 case "2":
                 case "3":
                     {
                         if (idPaso.style.display == "block"){
-                            idPaso.style.display = "none"
                             this.TotalAcumulado =  parseFloat(this.TotalAcumulado) - parseFloat(arrItem[1])
-                            return
+                            valida = true
+                        }
+
+                        let arrNamesCheck = document.getElementsByName('CHECK_' + idPasoCategoria[1])
+                        arrNamesCheck.forEach(function myFunction(item, index) {
+                            let idCheck = document.getElementById(item.id)
+                            idCheck.style.display = "none"
+                        });
+                        if (!valida)
+                        {
+                            this.TotalAcumulado = parseFloat(arrItem[1]) + parseFloat(this.TotalAcumulado)
                         }
                     } 
                     break;
                 case "4":
-                    break;
                 case "5":
-                    break;
                 case "6":
+                    {
+                        if (idPaso.style.display == "block"){
+                            idPaso.style.display = "none"
+                            this.TotalAcumulado =  parseFloat(this.TotalAcumulado) - parseFloat(arrItem[1])
+                        }
+                    } 
                     break;
                 default:
                   // code block
               }
             
             idPaso.style.display = "block"
-
-            this.TotalAcumulado = parseFloat(arrItem[1]) + parseFloat(this.TotalAcumulado)
             console.log(cadenaItem)
         }
     }
