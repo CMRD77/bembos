@@ -386,7 +386,7 @@ p{
     font-size: 0.8rem;
     text-align: center;
 }
-}
+
 .order-costo-descripcion{
     font-family: 'Roboto Slab', serif;
     font-weight: 900; 
@@ -417,4 +417,11 @@ p{
 /*ALERTA*/
 .alert{
     font-family: 'Roboto Slab', serif;
+}
+
+.ItemSeleccionado{
+    padding: 5px;
+    border-radius: 10px;
+    background: #9397a7;
+    display: none;
 }

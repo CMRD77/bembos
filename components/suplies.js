@@ -17,14 +17,15 @@ new Vue({
         TituloPaso7: "Elige tu bebida",
         envioData:[],
         prueba: "",
-        total:0
+        usuarioPrueba: "USER PRUEBAS",
+        TotalAcumulado:0.00
     },
     mounted:function(){
             this.GetApiServicio()
     },
     methods: {
         GetApiServicio: function(){
-            axios.get('https://api.myjson.com/bins/ihjzk')
+            axios.get('https://api.myjson.com/bins/r5nbs')
             .then(response =>{
                 let categoria01 = []
                 let categoria02 = []
@@ -175,6 +176,35 @@ new Vue({
             document.getElementById(pasoActivo).classList.add("stepper-invoice-item-activo");
         },
         sumarItems:function(cadenaItem){
+            let arrItem = cadenaItem.split('|')
+            let idPaso = document.getElementById('CHECK_' + arrItem[0])
+            let idPasoCategoria = arrItem[0].split('_')
+
+            switch(idPasoCategoria[1]) {
+                case "1":
+                case "2":
+                case "3":
+                    {
+                        if (idPaso.style.display == "block"){
+                            idPaso.style.display = "none"
+                            this.TotalAcumulado =  parseFloat(this.TotalAcumulado) - parseFloat(arrItem[1])
+                            return
+                        }
+                    } 
+                    break;
+                case "4":
+                    break;
+                case "5":
+                    break;
+                case "6":
+                    break;
+                default:
+                  // code block
+              }
+            
+            idPaso.style.display = "block"
+
+            this.TotalAcumulado = parseFloat(arrItem[1]) + parseFloat(this.TotalAcumulado)
             console.log(cadenaItem)
         }
     }
