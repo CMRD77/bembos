@@ -224,9 +224,8 @@ new Vue({
                   // code block
               }
             
-              this.TotalAcumulado = acumulado
+            this.TotalAcumulado = acumulado
             idPaso.style.display = "block"
-            console.log(cadenaItem)
         }
     }
 });
