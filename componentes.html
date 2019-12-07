@@ -41,19 +41,11 @@
     <main class="container" id="bembos-contenido-central">
 
     <!--MUESTRAS SELECTOR DE INGREDIENTES-->
-<<<<<<< HEAD
     <div id="p1">
         <div class="card-deck">
             <div class="col-lg-3  col-md-6 col-sm-12 col-12 mb-5" v-for="(category, index) in category01" :keys="index" id="DIV_1" @click="sumarItems('DIV_1' + '_' + category.id + '_' + category.price)">
                 <div class="card supply-item">
                     <img class="card-img-top" v-bind:src="category.image">
-=======
-    <div class="card-deck">
-        <!--SUPPLY ITEM-->
-        <div class="col-lg-3  col-md-6 col-sm-12 col-12 mb-5">
-              <div class="card supply-item">
-                  <img class="card-img-top img-fluid" src="imgs/supplies/hamburguesa_carne.png" alt="Hamburguesa de carne">
->>>>>>> 8f58d432516f75fb5c0c98b5fca83ae104da28bc
                     <div class="card-body">
                         <h5 class="supply-card-title">{{category.name}}</h5>
                         <p class="supply-card-precio mb-0">S/.{{category.price}}</p>
