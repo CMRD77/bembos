@@ -1,0 +1,40 @@
+*,*::after,*::before{
+    box-sizing: border-box
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+main {
+    width: 60%;
+    height: 600px;
+ 
+    padding: 20px;
+}
+
+.col-sm-4{
+    border: 1px solid black;
+    display: grid;
+    
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.card-title, .Sub {
+    margin: 0
+}
+.red{
+    color: red
+}
+
+
+
