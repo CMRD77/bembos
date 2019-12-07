@@ -48,7 +48,7 @@
                     <img class="card-img-top" v-bind:src="category.image">
                     <div class="card-body">
                         <h5 class="supply-card-title">{{category.name}}</h5>
-                        <p class="supply-card-precio mb-0">S/.{{category.price}}</p>
+                        <p class="supply-card-precio mb-0" :id="'PRICE_DIV_1_' + category.id">S/. {{category.price}}</p>
                     </div>
                 </div>
                 <div class="ItemSeleccionado" :id="'CHECK_DIV_1_' + category.id" name="CHECK_1" >Elegido</div>
@@ -62,7 +62,7 @@
                     <img class="card-img-top" v-bind:src="category.image">
                     <div class="card-body">
                         <h5 class="supply-card-title">{{category.name}}</h5>
-                        <p class="supply-card-precio mb-0">S/.{{category.price}}</p>
+                        <p class="supply-card-precio mb-0" :id="'PRICE_DIV_2_' + category.id">S/. {{category.price}}</p>
                     </div>
                 </div>
                 <div class="ItemSeleccionado" :id="'CHECK_DIV_2_' + category.id" name="CHECK_2">Elegido</div>
@@ -76,7 +76,7 @@
                     <img class="card-img-top" v-bind:src="category.image">
                     <div class="card-body">
                         <h5 class="supply-card-title">{{category.name}}</h5>
-                        <p class="supply-card-precio mb-0">S/.{{category.price}}</p>
+                        <p class="supply-card-precio mb-0" :id="'PRICE_DIV_3_' + category.id">S/. {{category.price}}</p>
                     </div>
                 </div>
                 <div class="ItemSeleccionado" :id="'CHECK_DIV_3_' + category.id" name="CHECK_3">Elegido</div>
@@ -90,7 +90,7 @@
                     <img class="card-img-top" v-bind:src="category.image">
                     <div class="card-body">
                         <h5 class="supply-card-title">{{category.name}}</h5>
-                        <p class="supply-card-precio mb-0">S/.{{category.price}}</p>
+                        <p class="supply-card-precio mb-0" :id="'PRICE_DIV_4_' + category.id">S/. {{category.price}}</p>
                     </div>
                 </div>
                 <div class="ItemSeleccionado" :id="'CHECK_DIV_4_' + category.id" name="CHECK_4">Elegido</div>
@@ -104,7 +104,7 @@
                     <img class="card-img-top" v-bind:src="category.image">
                     <div class="card-body">
                         <h5 class="supply-card-title">{{category.name}}</h5>
-                        <p class="supply-card-precio mb-0">S/.{{category.price}}</p>
+                        <p class="supply-card-precio mb-0" :id="'PRICE_DIV_5_' + category.id">S/. {{category.price}}</p>
                     </div>
                 </div>
                 <div class="ItemSeleccionado" :id="'CHECK_DIV_5_' + category.id" name="CHECK_5">Elegido</div>
@@ -118,7 +118,7 @@
                     <img class="card-img-top" v-bind:src="category.image">
                     <div class="card-body">
                         <h5 class="supply-card-title">{{category.name}}</h5>
-                        <p class="supply-card-precio mb-0">S/.{{category.price}}</p>
+                        <p class="supply-card-precio mb-0" :id="'PRICE_DIV_6_' + category.id">S/. {{category.price}}</p>
                     </div>
                 </div>
                 <div class="ItemSeleccionado" :id="'CHECK_DIV_6_' + category.id" name="CHECK_6">Elegido</div>

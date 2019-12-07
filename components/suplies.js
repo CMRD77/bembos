@@ -180,6 +180,7 @@ new Vue({
             let idPaso = document.getElementById('CHECK_' + arrItem[0])
             let idPasoCategoria = arrItem[0].split('_')
             let valida = false
+            let acumulado = this.TotalAcumulado
             
             switch(idPasoCategoria[1]) {
                 case "1":
@@ -187,18 +188,25 @@ new Vue({
                 case "3":
                     {
                         if (idPaso.style.display == "block"){
-                            this.TotalAcumulado =  parseFloat(this.TotalAcumulado) - parseFloat(arrItem[1])
+                            acumulado =  parseFloat(acumulado) - parseFloat(arrItem[1])
                             valida = true
                         }
 
                         let arrNamesCheck = document.getElementsByName('CHECK_' + idPasoCategoria[1])
                         arrNamesCheck.forEach(function myFunction(item, index) {
                             let idCheck = document.getElementById(item.id)
+                            let variablePrice = 'PRICE_DIV_' + idCheck.id.split('_')[2] + '_' + idCheck.id.split('_')[3]
+                            let price = document.getElementById(variablePrice).innerText.split(' ')
+
+                             if (idCheck.style.display == "block"){
+                                acumulado =  parseFloat(acumulado) - parseFloat(price[1])
+                            }
+
                             idCheck.style.display = "none"
                         });
                         if (!valida)
                         {
-                            this.TotalAcumulado = parseFloat(arrItem[1]) + parseFloat(this.TotalAcumulado)
+                            acumulado = parseFloat(arrItem[1]) + parseFloat(acumulado)
                         }
                     } 
                     break;
@@ -216,6 +224,7 @@ new Vue({
                   // code block
               }
             
+              this.TotalAcumulado = acumulado
             idPaso.style.display = "block"
             console.log(cadenaItem)
         }
