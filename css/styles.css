@@ -128,10 +128,12 @@ header{
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     color: #fff;
+    width: 130px;
     background-color: #22378b;
     padding: 10px;
     border-radius: 5px;
     border: none;
+    font-size: 12px;
     height: 45px;
 }
 
