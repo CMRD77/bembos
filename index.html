@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <script src="https://use.fontawesome.com/c58439f1b5.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
 <div class="container_bgleft_header"></div>
@@ -19,6 +20,8 @@
 <div class="container_bgleft_body"></div>
 <div class="container_bgright_body"></div>
 <div class="wrapper">
+
+    <!--COMPONENTE ENCABEZADO-->
     <header >
         <nav class=" header-top">
             <div id="datos_posicion_tiempo">
@@ -31,13 +34,21 @@
                 <img src="imgs/bembos_bb_logo.png" width="266" height="55" class="d-inline-block align-top" alt="Bembos Burger Builder V 1.0">
             </a>
         </nav>
-        <nav class="nav-user d-flex flex-row justify-content-between">
+        <nav class="nav-user d-flex flex-row justify-content-between align-items-cente">
             <ul class="btn-users ">
                 <li id="btn-close">X SALIR</li>
             </ul>
-            <span id="user-name-bembos">Nombre de Usuario  </span>
+            <div class="d-flex flex-row align-items-center">
+                <div id="user-name-bembos">Nombre de Usuario</div>
+                <div>
+                <i class="material-icons icon-blue ml-2 mr-3 mt-1">account_circle</i>
+                </div>
+            </div>
+           
         </nav>
     </header>
+
+    <!--COMPONENTE ENCABEZADO-->
     <main class="container" id="bembos-contenido-central">
     
     </main>
