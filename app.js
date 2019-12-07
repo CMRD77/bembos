@@ -100,7 +100,21 @@ const example1 = new Vue({
                 drinkName: 'gaseosa',
                 pending: false,
                 sended: false
-            }
+            },
+            {
+                id: '000001', time: '04/12/2018', hour: '10.10.10', client_name: 'Ale', product_name: 'hamburgesa de pollo', ingredients: [
+                    {
+                        name: 'tomate',
+                    },
+                    {
+                        name: 'cebolla',
+                    },
+                ],
+                drink: false,
+                drinkName: 'gaseosa',
+                pending: false,
+                sended: false
+            },
    
         ]
     }
