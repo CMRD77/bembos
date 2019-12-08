@@ -1,20 +1,11 @@
 new Vue({
     el: '#principal',
     data:{
-        category01:[],
-        category02:[],
-        category03:[],
-        category04:[],
-        category05:[],
-        category06:[],
-        category07:[],
-        envioData:[],
-        prueba: "",
         usuarioPrueba: "USER PRUEBAS",
         TotalAcumulado:0.00
     },
     mounted:function(){
-            this.GetApiServicio()
+        this.GetApiServicio()
     },
     methods: {
         GetApiServicio: function(){
