@@ -62,7 +62,7 @@ header{
     background-color: #22378b;
     display: inline-table;
     width: auto;
-    border-radius: 5px;
+    border-radius: 5px;G
 }
 
 #user-name-bembos{
@@ -78,7 +78,83 @@ header{
 .icon-blue{
     color: #22378b;
 }
+/*COCINA*/
 
+main {
+    width: 100%;
+    padding: 20px;
+}
+
+.col-sm-3{
+    border: 1px solid black;
+    margin: 5px;    
+    border-radius: 5px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.statusButtons{
+    padding-bottom: 10px;
+    padding-top: 0;
+    padding-left: 40px;
+    padding-right: 0px;
+}
+
+.ordersTitle{
+    font-family: 'Oswald', sans-serif;
+    color: #22378b;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 40px;
+    padding-right: 0px;
+}
+
+.card-title{
+font-family: 'Oswald', sans-serif;
+color: #22378b;
+}
+
+.card-title, .Sub {
+    margin: 0
+}
+.red{
+    color: red
+}
+
+#example-1{
+    display: flex;
+    justify-content: center;
+}
+
+.mainOrders{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.botonEntregar{
+    background-color: #ffb500;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.botonEntregado{
+    background-color: #22378b;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.row orders{
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
 /*MAIN AREA*/
 .container_bgleft_header {
     background: url(https://www.bembos.com.pe/skin/frontend/galafoodiris/default/bembos/images/bg_header_top_left.png) no-repeat;
