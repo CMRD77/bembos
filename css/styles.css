@@ -17,10 +17,11 @@ body {
 
 /*HEADER COMPONENT*/
 
-header{
-    height: 150px;
+header {
+ /*  height: 150px;
+      background-color: #22378b;
+ */
     width: 100wv;
-    background-color: #22378b;
 }
 
 .header-top {
@@ -62,7 +63,7 @@ header{
     background-color: #22378b;
     display: inline-table;
     width: auto;
-    border-radius: 5px;G
+    border-radius: 5px;
 }
 
 #user-name-bembos{
@@ -150,6 +151,9 @@ color: #22378b;
     border-radius: 5px;
 }
 
+.row{
+    margin: 0;
+}
 .row orders{
     padding: 5px;
     display: flex;
@@ -506,7 +510,7 @@ p{
     background: #ff2600;
     font-family: 'Roboto Slab', serif;
     color: white;
-    display: none;c
+    display: none;
 }
 .ItemSeleccionado::before {
     width: 0;
@@ -521,4 +525,10 @@ p{
     padding-bottom:30px;
     left: 50%;
     margin-left: -10px;
+}
+
+
+
+.date{
+    font-size: 14px;
 }

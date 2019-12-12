@@ -71,7 +71,7 @@
             <div :class="{red: item.pending}">{{item.id}}</div>
           </div>
           <div>
-            <div>{{item.time}} - {{item.hour}}</div>
+            <div class="date">{{item.time}} - {{item.hour}}</div>
 
             <p class="Sub">CLIENTE NOMBRE:</p>
             <div>{{item.client_name}}</div>
@@ -80,7 +80,7 @@
         <h6 class="product name">{{item.product_name}}</h6>
 
         <p class="Sub">INGREDIENTES:</p>
-        <div class="row">
+        <div >
           <div v-for="ing in item.ingredients">{{ing.name}}</div>
 
         </div>
